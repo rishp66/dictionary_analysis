@@ -1,6 +1,9 @@
-# Azure Cosmos DB Data Visualization and Sentiment Analysis App
+# Azure Cosmos DB Data Visualization and Sentiment Analysis for DefineTheCloud
+
 
 This app connects to an Azure Cosmos DB database, retrieves data, and provides interactive visualizations using Streamlit. It also performs sentiment analysis on text data using TextBlob.
+
+Website for Analysis: https://definethecloud.guide/
 
 ## Features
 
