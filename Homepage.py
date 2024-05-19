@@ -1,7 +1,5 @@
 import os
 
-import dotenv
-from dotenv import load_dotenv
 from azure.cosmos import CosmosClient
 
 import pandas as pd
@@ -20,11 +18,9 @@ st.set_page_config(
 
 # show sidebar
 
-# creating Access Controls
-load_dotenv('/Users/rishpednekar/Documents/PythonProjects/dictionary_analysis/.env')
-uri: str = os.getenv('URI')
-key: str = os.getenv('KEY')
-
+# Creating Access Controls using Streamlit secrets
+uri: str = st.secrets["URI"]
+key: str = st.secrets["Key"]
 client = CosmosClient(url=uri, credential=key)
 
 database = client.get_database_client("clouddictionary")
