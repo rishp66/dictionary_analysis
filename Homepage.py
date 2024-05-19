@@ -1,5 +1,6 @@
 import os
 
+import dotenv
 from dotenv import load_dotenv
 from azure.cosmos import CosmosClient
 
