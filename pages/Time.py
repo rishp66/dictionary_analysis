@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
+from Homepage import share_df
 
 #set page title
 #st.set_page_config(page_title="Time Analysis", page_icon="⏰", layout='wide')
@@ -14,7 +15,7 @@ import matplotlib.pyplot as plt
 st.title("⏰ Time Analysis")
 st.sidebar.subheader('This section contains: \n 1) Definition Contributions per Year \n 2) Definition Contribution per Month \n 3) Definition Contributions per Day of Week \n 4) Definition Contributions per Hour ' )
 
-from Homepage import share_df
+
 
 # copy_dataframe
 time_df = share_df.copy()
