@@ -19,8 +19,8 @@ st.set_page_config(
 # show sidebar
 
 # Creating Access Controls using Streamlit secrets
-uri: str = st.secrets["uri"]
-key: str = st.secrets["key"]
+uri = st.secrets["uri"]
+key = st.secrets["key"]
 client = CosmosClient(url=uri, credential=key)
 
 database = client.get_database_client("clouddictionary")
