@@ -18,12 +18,6 @@ RUN pip3 install -r requirements.txt
 
 COPY Homepage.py .
 
-COPY Authors.py .
-
-COPY Dictionary.py .
-
-COPY Time.py .
-
 EXPOSE 8501
 
 CMD ["streamlit", "run", "Homepage.py", "--server.port=8501", "--server.address=0.0.0.0"]
