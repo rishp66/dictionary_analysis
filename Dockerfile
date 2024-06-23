@@ -6,7 +6,7 @@ COPY requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
 
-COPY Homepage.py .
+COPY . .
 
 EXPOSE 8501
 
