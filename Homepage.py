@@ -7,6 +7,7 @@ import pickle
 import numpy as np
 import streamlit as st
 import os
+from dotenv import load_dotenv
 
 from textblob import TextBlob
 
@@ -20,6 +21,7 @@ st.set_page_config(
 # show sidebar
 
 # Creating Access Controls using Streamlit secrets
+load_dotenv()
 uri = os.getenv('uri')
 key = os.getenv('key')
 client = CosmosClient(url=uri, credential=key)
