@@ -3,7 +3,7 @@
 
 This app connects to an Azure Cosmos DB database, retrieves data, and provides interactive visualizations using Streamlit. It also performs sentiment analysis on text data using TextBlob.
 
-Website for Analysis: https://definethecloud.guide/
+Website for Data: https://definethecloud.guide/
 
 ## Features
 
